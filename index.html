@@ -885,21 +885,23 @@
       const directLink = document.getElementById('open-video-direct');
       const buttons = document.querySelectorAll('[data-video]');
       const sources = {
-        vk: {
-          src: 'https://vkvideo.ru/video_ext.php?oid=-242574376&id=456239017&hash=d74e1c21c5dc87b3&hd=4',
-          title: 'Презентация MetaBox — VK Видео',
-          help: 'Сейчас выбрано VK Видео. Если плеер не загрузился, открой ролик напрямую по ссылке ниже.',
-          link: 'https://vkvideo.ru/video-242574376_456239017',
-          linkText: 'Открыть видео в VK Видео ↗'
-        },
-        youtube: {
-          src: 'https://www.youtube.com/embed/8gYpochuoYM?si=YMJI99D-CiIbNJF4',
-          title: 'Презентация MetaBox — YouTube',
-          help: 'Сейчас выбран YouTube. Если сервис недоступен в твоём регионе или сети, переключись на VK Видео.',
-          link: 'https://youtu.be/8gYpochuoYM',
-          linkText: 'Открыть видео на YouTube ↗'
-        }
-      };
+       
+      vk: {
+        src: 'https://vkvideo.ru/video_ext.php?oid=-242574376&id=456239019&hash=63d76c7b64bd4c2f&hd=3',
+        title: 'Презентация — VK Видео',
+        help: 'Сейчас выбрано VK Видео. Если плеер не загрузился, открой ролик напрямую по ссылке ниже.',
+        link: 'https://vkvideo.ru/video-242574376_456239019',
+        linkText: 'Открыть видео в VK Видео ↗'  
+          },
+      youtube: {
+        src: 'https://www.youtube.com/embed/Q3v-SSbOiB4?si=wUmZmh6xcmlqgmWD',
+        title: 'Презентация — YouTube',
+        help: 'Сейчас выбран YouTube. Если сервис недоступен в твоём регионе или сети, переключись на VK Видео.',
+        link: 'https://youtu.be/Q3v-SSbOiB4',
+        linkText: 'Открыть видео на YouTube ↗'
+          }
+        };
+
 
       buttons.forEach(function (button) {
         button.addEventListener('click', function () {
